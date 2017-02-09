@@ -16,7 +16,7 @@
 // 1. Global
 // ---------
 
-$primary-color: #2199e8;
+$primary-color: #46ceb9;
 $secondary-color: #777777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -24,13 +24,13 @@ $alert-color: #ec5840;
 $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #303030;
 $white: #fefefe;
 $pre-color: #ff6908;
 $global-width: 580px;
 $global-width-small: 95%;
 $global-gutter: 16px;
-$body-background: $light-gray;
+$body-background: $white;
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
@@ -60,7 +60,7 @@ $global-font-weight: normal;
 $header-color: inherit;
 $global-line-height: 1.3;
 $global-font-size: 16px;
-$body-line-height: $global-line-height;
+$body-line-height: $global-line-height * 1.2;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-font-weight;
 $h1-font-size: 34px;
@@ -70,7 +70,7 @@ $h4-font-size: 24px;
 $h5-font-size: 20px;
 $h6-font-size: 18px;
 $header-margin-bottom: 10px;
-$paragraph-margin-bottom: 10px;
+$paragraph-margin-bottom: 20px;
 $small-font-size: 80%;
 $small-font-color: $medium-gray;
 $lead-font-size: $global-font-size * 1.25;
@@ -84,8 +84,8 @@ $subheader-margin-bottom: 8px;
 $hr-width: $global-width;
 $hr-border: 1px solid $black;
 $hr-margin: 20px auto;
-$anchor-text-decoration: none;
-$anchor-color: $primary-color;
+$anchor-text-decoration: underline;
+$anchor-color: $black;
 $anchor-color-visited: $anchor-color;
 $anchor-color-hover: darken($primary-color, 10%);
 $anchor-color-active: $anchor-color-hover;
@@ -97,7 +97,7 @@ $stat-font-size: 40px;
 $button-padding: (
   tiny: 4px 8px 4px 8px,
   small: 5px 10px 5px 10px,
-  default: 8px 16px 8px 16px,
+  default: 8px*1.5 16px*2 8px*1.5 16px*2,
   large: 10px 20px 10px 20px,
 );
 $button-font-size: (
@@ -108,7 +108,7 @@ $button-font-size: (
 );
 $button-color: $white;
 $button-color-alt: $medium-gray;
-$button-font-weight: bold;
+$button-font-weight: 100;
 $button-margin: 0 0 $global-margin 0;
 $button-background: $primary-color;
 $button-border: 2px solid $button-background;

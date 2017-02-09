@@ -1,4 +1,14 @@
 @import 'settings';
 @import 'foundation-emails';
 
-@import 'template/template';
+// @import 'template/template';
+
+@import 'property-tycoon/main';
+
+// fixes the styling bug on hrs
+hr {
+  border: 0;
+  border-bottom: $hr-border;
+  max-width: $hr-width; 
+  margin: $hr-margin;
+}

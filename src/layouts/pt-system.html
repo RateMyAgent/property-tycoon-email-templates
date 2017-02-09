@@ -1,0 +1,89 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{root}}css/app.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Property Tycoon - {{subject}}</title>
+		<!-- <style> -->
+	</head>
+	<body>
+		<span class="preheader">{{description}}</span>
+		<table class="body">
+			<tr>
+				<td class="center" align="center" valign="top">
+					<center>
+						<container class="header">
+							<spacer size="10"></spacer>
+							<row>
+								<columns>
+									<p class="text-center touble-viewing">Having trouble viewing? <a href="#"><strong>click here</strong></a> to view it online</p>
+									<center>
+										<img src="assets/img/email-header.jpg" />
+									</center>
+								</columns>
+							</row>
+						</container>
+						<container class="body">
+							<row>
+								<columns></columns>
+								<columns large="10">
+									<spacer size="32"></spacer>
+									{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created. --}}
+									{{> body}}
+								</columns>
+								<columns></columns>
+							</row>
+							<spacer size="16"></spacer>
+						</container>
+						<container class="pt-footer">
+							<spacer size="32"></spacer>
+							<row>
+								<columns>
+									<p class="text-center"><strong>FOLLOW US ON</strong></p>
+								</columns>
+							</row>
+							<row>
+								<columns></columns>
+								<columns large="1">
+									<center>	
+										<a href="#"><img src="assets/img/social-fb.png" /></a>
+									</center>	
+								</columns large="1">
+								 <columns>
+									<center>	
+										<a href="#"><img src="assets/img/social-instagram.png" /></a>
+									</center>	
+								</columns>
+								<columns large="1">
+									<center>	
+										<a href="#"><img src="assets/img/social-twitter.png" /></a>
+									</center>	
+								</columns>
+								<columns></columns>
+							</row>
+							<row>
+								<columns>
+									<p class="text-center">You're receiving this email because you signed up to receive email updates on Property Tycoon. If you'd prefer not to receive updates, you can <a href="#">unsubscribe</a>.</p>
+								</columns>
+							</row>
+							<row>
+								<columns>
+									<p class="text-center small">Copyright &copy;2017 Property Tycoon, all rights reserved.</p>
+								</columns>
+							</row>
+							<spacer size="16"></spacer>
+						</container>
+					</center>
+				</td>
+			</tr>
+		</table>
+		<!-- prevent Gmail on iOS font size manipulation -->
+	 <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+	</body>
+</html>
+

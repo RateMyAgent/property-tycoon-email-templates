@@ -1,0 +1,26 @@
+.container.pt-footer {
+	background: #f0f0f0;
+	p {
+		font-size: $small-font-size;
+		color: #7b7c87;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	a {
+		color: #7b7c87;
+
+	}
+}
+
+.container.header  {
+	p.touble-viewing {
+		font-size: $small-font-size;
+		margin-bottom: 10px;
+	}
+}
+
+.container.body {
+	hr {
+		border-bottom: 1px solid #f0f0f0;
+	}
+}
